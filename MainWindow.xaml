@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button x:Name="button_Copy" Content="Select" HorizontalAlignment="Left" Margin="239,28,0,0" VerticalAlignment="Top" Width="122" Height="39"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="28,28,0,0" VerticalAlignment="Top" Width="172" Height="39"/>
+
     </Grid>
 </Window>
