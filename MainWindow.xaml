@@ -7,8 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="button_Copy" Content="Select" HorizontalAlignment="Left" Margin="239,28,0,0" VerticalAlignment="Top" Width="122" Height="39"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="28,28,0,0" VerticalAlignment="Top" Width="172" Height="39"/>
+        <Button x:Name="port_select_btn" Content="Select" HorizontalAlignment="Left" Margin="239,28,0,0" VerticalAlignment="Top" Width="122" Height="30" Button.Click="port_select_btn_Click"/>
+        <ComboBox x:Name="com_ports_box" HorizontalAlignment="Left" Margin="28,28,0,0" VerticalAlignment="Top" Width="172" Height="30"  ItemsSource="{Binding ListOfAvaliablePorts}" SelectedIndex="{Binding SelectedPortIndex}">
+        </ComboBox>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="107,84,0,0" VerticalAlignment="Top" Width="93" SelectedIndex="1">
+            <ComboBoxItem Content="7"/>
+            <ComboBoxItem Content="8"/>
+        </ComboBox>
+        <Label x:Name="label" Content="Data bits" HorizontalAlignment="Left" Margin="37,84,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO.Ports;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace UnitTestApp.Interfaces
 {
-    interface IComPortSender
+    public interface IComPortSender
     {
-        void SendBytes(ComPortData comPort, byte[] bytes);
+        void SendBytes(SerialPort comPort, byte[] bytes);
     }
 }
